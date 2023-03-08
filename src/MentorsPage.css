@@ -16,3 +16,8 @@
   --green2-light: #7ABD87;
   --green3: rgba(0, 162, 7, 0.17);
 }
+
+.mentors-page {
+  min-height: 100vh;
+  display: flex;
+}

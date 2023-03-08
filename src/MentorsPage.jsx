@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import Carousel from './components/Carousel'
-import './App.css'
+import './MentorsPage.css'
 
-const App = () => {
+const MentorsPage = () => {
 
   return (
-    <div className="App">
+    <div className="mentors-page">
       <Carousel />
     </div>
   )
 }
 
-export default App
+export default MentorsPage

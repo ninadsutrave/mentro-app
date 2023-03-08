@@ -33,24 +33,27 @@ const Carousel = () => {
     }
 
   return (
-    <div className="carousel-wrapper">
-       <button onClick={rotateRight}>↓</button>
-       <button onClick={rotateLeft}>↓</button>
-       <div className="test"/>
-       <div
-         className="carousel"
-         style={{ transform: `rotate(${carousel.carouselOrietation}deg)` }}
-       >
-         {carouselData.map((item, index) => (
-           <div
-             className="carousel-element"
-             key={index}
-             id={index}
-             style={{ transform: `rotate(${carousel.elementOrientation}deg)` }}
-           />
-         ))}
-       </div>
-     </div>
+      <div className="carousel-wrapper">
+        <div className="carousel-border">
+          <div
+            className="carousel"
+            style={{ transform: `rotate(${carousel.carouselOrietation}deg)` }}
+          >
+            {carouselData.map((item, index) => (
+              <div
+                className="carousel-element"
+                key={index}
+                id={index}
+                style={{ transform: `rotate(${carousel.elementOrientation}deg)`, backgroundImage: `url(${item.image})`}}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="navigators">
+          <button className="navigation-button" onClick={rotateLeft}>↓</button>
+          <button className="navigation-button" onClick={rotateRight}>↓</button>
+        </div>
+      </div>
   )
 }
 

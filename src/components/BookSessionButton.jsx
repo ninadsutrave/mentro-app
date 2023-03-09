@@ -3,8 +3,8 @@ import './BookSessionButton.css'
 
 const BookSessionButton = ({focusElement}) => {
 
-  const backgroundColor = (focusElement % 2)?'var(--green1)':'var(--green2)'
-  const dropShadow = (focusElement % 2)?'drop-shadow(8px 4px 20px #4CAF50)':'drop-shadow(8px 4px 20px #7ABD87)'
+  const backgroundColor = (focusElement % 2)?'var(--green2)':'var(--green1)'
+  const dropShadow = (focusElement % 2 === 0)?'drop-shadow(8px 4px 20px #4CAF50)':'drop-shadow(8px 4px 20px #7ABD87)'
 
   return (
     <div className="book-session-btn-wrapper">

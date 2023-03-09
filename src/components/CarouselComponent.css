@@ -36,12 +36,12 @@
 }
 
 .navigators {
-    z-index: 10;
+    z-index: 1;
     position: fixed;
     left: 80vh;
     display: flex; 
-    gap: 50rem;
-    margin-left: -10rem;
+    gap: 40rem;
+    margin-left: -4rem;
     width: 70vw;
     height: 50vh;
     bottom: 0;
@@ -58,6 +58,7 @@
     border: none;
     margin-left: 5rem;
     margin-top: 10rem;
+    font-size: 2rem;
 }
 
 .navigation-button:hover {
@@ -70,7 +71,6 @@
     position: absolute;
     border-radius: 50%;
     background: transparent;
-    border: 1px solid black;
     width: 150px;
     height: 150px;
     display: flex;
@@ -80,7 +80,6 @@
     margin: 2px;
     bottom: 0;
     transition: 0.5s;
-    z-index: 5;
 }
 
 .mentor-img {

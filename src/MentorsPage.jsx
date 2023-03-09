@@ -9,6 +9,7 @@ import MentorNameContainer from './components/MentorNameContainer'
 import BookSessionButton from './components/BookSessionButton'
 import mentorData from './MentorData'
 import overlay from './assets/images/overlay.png'
+import overlay2 from './assets/images/overlay2.png'
 
 const MentorsPage = () => {
 
@@ -20,15 +21,20 @@ const MentorsPage = () => {
 
   const [activeMentor, setActiveMentor] = useState(mentorData[0])
 
+  var overlayImg = (activeMentor.id % 2)?overlay2:overlay
+
   useEffect(() => {
     const info = mentorData.filter((elem) => carousel.focusElement === elem.id)
     setActiveMentor(info[0])
-  })
+  }, [carousel])
 
   return (
     <div className="mentors-page">
-      <img className="overlay-img" src={overlay} />
-      <CarouselComponent carousel={carousel} setCarousel={setCarousel}/>
+      <img className="overlay-img" src={overlayImg}/>
+      <CarouselComponent carousel={carousel} setCarousel={setCarousel} activeMentor={activeMentor}/>
+      <div className="carousel-element" key="11">
+          <img className="mentor-img" id="center-img" src={activeMentor.image}/>
+      </div>
       <div className="left-section">
         <div className="mentor-info-wrapper">
           <MentorRating activeMentor={activeMentor}/>

@@ -7,7 +7,7 @@ import stars3 from '../assets/images/stars3.png'
 
 const MentorRating = ({activeMentor}) => {
 
-  var textColor = (activeMentor.id % 2)?'var(--green1)':'var(--green2)'
+  var textColor = (activeMentor.id % 2)?'var(--green2)':'var(--green1)'
   var imgUrl = (activeMentor.id % 2)?stars3:stars2
 
   if(activeMentor.rating === 4.9) {

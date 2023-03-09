@@ -2,16 +2,16 @@ import React from 'react'
 import carouselData from '../MentorData'
 import './CarouselComponent.css'
 
-const CarouselComponent = ({carousel, setCarousel}) => {
+const CarouselComponent = ({carousel, setCarousel, activeMentor}) => {
 
-  const navigatorColor = (carousel.focusElement % 2)?'var(--green1)':'var(--green2)'
-  const borderColor = (carousel.focusElement % 2)?'url("data:image/svg+xml,%3csvg width=\'100%25\' height=\'100%25\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3crect width=\'100%25\' height=\'100%25\' fill=\'none\' rx=\'800\' ry=\'800\' stroke=\'%234CAF50FF\' stroke-width=\'4\' stroke-dasharray=\'6%2c 24\' stroke-dashoffset=\'0\' stroke-linecap=\'square\'/%3e%3c/svg%3e")':'url("data:image/svg+xml,%3csvg width=\'100%25\' height=\'100%25\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3crect width=\'100%25\' height=\'100%25\' fill=\'none\' rx=\'800\' ry=\'800\' stroke=\'%230C3959FF\' stroke-width=\'4\' stroke-dasharray=\'6%2c 24\' stroke-dashoffset=\'0\' stroke-linecap=\'square\'/%3e%3c/svg%3e")'
+  const navigatorColor = (carousel.focusElement % 2)?'var(--green2)':'var(--green1)'
+  const borderColor = (carousel.focusElement % 2 === 0)?'url("data:image/svg+xml,%3csvg width=\'100%25\' height=\'100%25\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3crect width=\'100%25\' height=\'100%25\' fill=\'none\' rx=\'800\' ry=\'800\' stroke=\'%234CAF50FF\' stroke-width=\'4\' stroke-dasharray=\'6%2c 24\' stroke-dashoffset=\'0\' stroke-linecap=\'square\'/%3e%3c/svg%3e")':'url("data:image/svg+xml,%3csvg width=\'100%25\' height=\'100%25\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3crect width=\'100%25\' height=\'100%25\' fill=\'none\' rx=\'800\' ry=\'800\' stroke=\'%230C3959FF\' stroke-width=\'4\' stroke-dasharray=\'6%2c 24\' stroke-dashoffset=\'0\' stroke-linecap=\'square\'/%3e%3c/svg%3e")'
 
     const rotateRight = () => {
         setCarousel({
             carouselOrietation: carousel.carouselOrietation + 36,
             elementOrientation: carousel.elementOrientation - 36,
-            focusElement: (carousel.focusElement<9)?carousel.focusElement + 1:0
+            focusElement: (carousel.focusElement>0)?carousel.focusElement - 1:9
         })
     }
 
@@ -19,7 +19,7 @@ const CarouselComponent = ({carousel, setCarousel}) => {
         setCarousel({
             carouselOrietation: carousel.carouselOrietation - 36,
             elementOrientation: carousel.elementOrientation + 36,
-            focusElement: (carousel.focusElement>0)?carousel.focusElement - 1:9
+            focusElement: (carousel.focusElement<9)?carousel.focusElement + 1:0
         })
     }
 

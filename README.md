@@ -8,9 +8,9 @@ Link To Design: https://www.figma.com/file/lua5xLOP2bEP4kaNBHFmGe/Mentro_Web_Ass
 
 # Preview
 
-![Preview Image](src/assets/preview1.png)
+![Preview Image](src/assets/images/preview1.png)
 
-![Preview Gif](src/assets/preview2.gif)
+![Preview Gif](src/assets/gifs/preview2.gif)
 
 # Live Link
 

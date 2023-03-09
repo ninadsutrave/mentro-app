@@ -1,5 +1,4 @@
 .mentor-info {
-    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -18,7 +17,8 @@
 }
 
 .mentor-description {
-    width: 40%;
+    font-size: 1.2rem;
+    width: 70%;
     text-align: justify;
     text-align: justify;
     text-justify: auto; 

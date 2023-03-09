@@ -4,6 +4,8 @@ import './CarouselComponent.css'
 
 const CarouselComponent = ({carousel, setCarousel}) => {
 
+  const navigatorColor = (carousel.focusElement % 2)?'var(--green1)':'var(--green2)'
+
     const rotateRight = () => {
         setCarousel({
             carouselOrietation: carousel.carouselOrietation + 36,
@@ -33,14 +35,14 @@ const CarouselComponent = ({carousel, setCarousel}) => {
                 key={index}
                 style={{ transform: `rotate(${carousel.elementOrientation}deg)`, backgroundImage: `url(${item.image})`}}
               > 
-              <img src={item.image}/>
-                </div>
+                <img className="mentor-img" src={item.image}/>
+              </div>
             ))}
           </div>
         </div>
         <div className="navigators">
-          <button className="navigation-button" onClick={rotateLeft}>↓</button>
-          <button className="navigation-button" onClick={rotateRight}>↓</button>
+          <button className="navigation-button" onClick={rotateLeft} style={{backgroundColor: navigatorColor}}>↓</button>
+          <button className="navigation-button" onClick={rotateRight} style={{backgroundColor: navigatorColor}}>↓</button>
         </div>
       </div>
   )

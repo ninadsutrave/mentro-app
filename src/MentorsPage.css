@@ -23,16 +23,19 @@
   flex-direction: column;
 }
 
-.top-section {
+.left-section {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80vh;
+  z-index: 10;
+  width: 30%;
 }
 
-.bottom-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.right-section {
+  position: fixed;
+  top: 70vh;
+  right: -1vh;
 }
 
 .mentor-info-wrapper {

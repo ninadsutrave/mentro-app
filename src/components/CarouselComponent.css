@@ -1,8 +1,10 @@
 .carousel-wrapper {
-    left: 10;
-    top: 10;
+    position: fixed;
+    top: 20px;
+    left: 85vh;
     width: 100%;
     margin-top: 10rem;
+    background-color: transparent;
 }
 
 .carousel-border {
@@ -10,6 +12,7 @@
     height: 800px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='800' ry='800' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 800px;
+    background-color: transparent;
 }
 
 .carousel {
@@ -20,6 +23,7 @@
     transition: 0.5s;
     transform-origin: center center;
     border-radius: 500px;
+    background-color: transparent;
 }
 
 .carousel::before {
@@ -31,16 +35,20 @@
 }
 
 .navigators {
+    z-index: 10;
+    position: fixed;
+    left: 80vh;
+    bottom: 45vh;
     display: flex; 
-    gap: 15rem;
+    gap: 50rem;
 }
 
 .navigation-button {
     background: var(--green1);
     color: white;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 75px;
+    height: 75px;
     outline: none;
     border: none;
 }
@@ -65,7 +73,12 @@
     margin: 2px;
     bottom: 0;
     transition: 0.5s;
-    background-image: url(../assets/images/image1.png);
+    z-index: 5;
+}
+
+.mentor-img {
+    width: 150px;
+    height: 150px;
 }
 
 .carousel-element:nth-child(1) {

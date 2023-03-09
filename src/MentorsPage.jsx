@@ -26,16 +26,16 @@ const MentorsPage = () => {
 
   return (
     <div className="mentors-page">
-      <div className="top-section">
+      <CarouselComponent carousel={carousel} setCarousel={setCarousel}/>
+      <div className="left-section">
         <div className="mentor-info-wrapper">
           <MentorRating activeMentor={activeMentor}/>
           <MentorInfo activeMentor={activeMentor}/>
         </div>
-        <CarouselComponent carousel={carousel} setCarousel={setCarousel}/>
+          <BookSessionButton focusElement={activeMentor.id}/>
       </div>
       
-      <div className="bottom-section">
-        <BookSessionButton focusElement={activeMentor.id}/>
+      <div className="right-section">
         <MentorNameContainer name={activeMentor.name}/>
       </div>
     </div>

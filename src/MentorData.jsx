@@ -1,3 +1,9 @@
+import image1 from './assets/images/image1.png'
+import image2 from './assets/images/image2.png'
+import image3 from './assets/images/image3.png'
+import image4 from './assets/images/image4.png'
+import image5 from './assets/images/image5.png'
+
 const mentorData = [
     {
         "id": 0,
@@ -5,7 +11,7 @@ const mentorData = [
         "rating": 4.9,
         "experience": "SDE @Amazon",
         "description": "I am Prankur Gupta, I am working as a Software Development Engineer at Amazon. I can guide you throughout your preparation phase. Trust me when I tell you this I know the exact recipe to crack the coding interview rounds of top companies for the SDE role.",
-        "image": "../assets/images/image1.png"
+        "image": image1
     },
     {
         "id": 1,
@@ -13,7 +19,7 @@ const mentorData = [
         "rating": 5,
         "experience": "SDE-2 @Amazon",
         "description": "I am a Senior Software Developer American Express. Have been passionately solving Leetcode, HackerRank, Codechef, Codeforces problems, and enthusiastically solving problems with the analysis of space.",
-        "image": "../assets/images/image2.png"
+        "image": image2
     },
     {
         "id": 2,
@@ -21,7 +27,7 @@ const mentorData = [
         "rating": 5,
         "experience": "Software Engineer @Red Hat",
         "description": "Engineer @RedHat | Program Manager'20 @GirlScript | GHCI Scholar | International Open Source Award finalist by Red Hat | Winner SIH, 21U21 Award | Google Connect Winner'19 | Mentor GCI",
-        "image": "../assets/images/image3.png"
+        "image": image3
     },
     {
         "id": 3,
@@ -29,7 +35,7 @@ const mentorData = [
         "rating": 5,
         "experience": "SDE-1 @Groww",
         "description": "A curious learner, on a way to become a kickass developer who writes Python, Java, Javascript and Go | Software Engineer @Groww | Ex-Software Engineer @Grofers | Tech Consultant | Freelancer | Open Source Developer | Coding Instructor",
-        "image": "../assets/images/image4.png"
+        "image": image4
     },
     {
         "id": 4,
@@ -37,7 +43,7 @@ const mentorData = [
         "rating": 5,
         "experience": "ML Engineer @Firework",
         "description": "Working my way to build the world's future product. Machine Learning Engineer, Data and Technology Evangelist I breathe in developing software with intelligence. I have been involved with startups like DailyHunt, Firework Hq, MagilHub to build the AI end of their products.",
-        "image": "../assets/images/image5.png"
+        "image": image5
     },
     {
         "id": 5,
@@ -45,7 +51,7 @@ const mentorData = [
         "rating": 4.9,
         "experience": "SDE @Amazon",
         "description": "I am Prankur Gupta, I am working as a Software Development Engineer at Amazon. I can guide you throughout your preparation phase. Trust me when I tell you this I know the exact recipe to crack the coding interview rounds of top companies for the SDE role.",
-        "image": "../assets/images/image1.png"
+        "image": image1
     },
     {
         "id": 6,
@@ -53,7 +59,7 @@ const mentorData = [
         "rating": 5,
         "experience": "SDE-2 @Amazon",
         "description": "I am a Senior Software Developer American Express. Have been passionately solving Leetcode, HackerRank, Codechef, Codeforces problems, and enthusiastically solving problems with the analysis of space.",
-        "image": "../assets/images/image2.png"
+        "image": image2
     },
     {
         "id": 7,
@@ -61,7 +67,7 @@ const mentorData = [
         "rating": 5,
         "experience": "Software Engineer @Red Hat",
         "description": "Engineer @RedHat | Program Manager'20 @GirlScript | GHCI Scholar | International Open Source Award finalist by Red Hat | Winner SIH, 21U21 Award | Google Connect Winner'19 | Mentor GCI",
-        "image": "../assets/images/image3.png"
+        "image": image3
     },
     {
         "id": 8,
@@ -69,7 +75,7 @@ const mentorData = [
         "rating": 5,
         "experience": "SDE-1 @Groww",
         "description": "A curious learner, on a way to become a kickass developer who writes Python, Java, Javascript and Go | Software Engineer @Groww | Ex-Software Engineer @Grofers | Tech Consultant | Freelancer | Open Source Developer | Coding Instructor",
-        "image": "../assets/images/image4.png"
+        "image": image4
     },
     {
         "id": 9,
@@ -77,7 +83,7 @@ const mentorData = [
         "rating": 5,
         "experience": "ML Engineer @Firework",
         "description": "Working my way to build the world's future product. Machine Learning Engineer, Data and Technology Evangelist I breathe in developing software with intelligence. I have been involved with startups like DailyHunt, Firework Hq, MagilHub to build the AI end of their products.",
-        "image": "../assets/images/image5.png"
+        "image": image5
     }
 ]
 

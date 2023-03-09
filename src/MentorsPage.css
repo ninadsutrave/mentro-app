@@ -23,6 +23,12 @@
   flex-direction: column;
 }
 
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .bottom-section {
   display: flex;
   align-items: center;

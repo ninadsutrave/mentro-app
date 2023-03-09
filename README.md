@@ -1,5 +1,10 @@
 ## Description
 
+[Mentro](https://mentro.tech)
+India's 🇮🇳 first Social Upskilling Platform 🧑‍💻
+
+Learn and Upskill directly from people you admire and trust! Check out their website to know more what they have to offer!
+
 # Internship Assessment Task
 
 Goal: Replicate the following Figma Design using ReactJS

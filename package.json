@@ -1,8 +1,15 @@
 {
-  "name": "circular-carousel",
+  "name": "mentro-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "Mentors page with a nice circular carousel",
+  "author": {
+    "name": "Ninad Sutrave",
+    "url": "https://ninadsutrave.in",
+    "email": "ninadsutrave@gmail.com"
+  },
+  "repo": "https://github.com/metro-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

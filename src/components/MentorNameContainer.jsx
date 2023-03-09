@@ -1,10 +1,12 @@
 import React from 'react'
 import './MentorNameContainer.css'
+import mentorData from '../MentorData'
 
 const MentorNameContainer = ({name}) => {
+  
   return (
     <div className="mentor-name-container">
-      {name}
+      <div className="mentor-name">{name}</div>
     </div>
   )
 }

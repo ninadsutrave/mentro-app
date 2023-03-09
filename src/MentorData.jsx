@@ -1,5 +1,6 @@
-[
+const mentorData = [
     {
+        "id": 0,
         "name": "Prankur Gupta",
         "rating": 4.9,
         "experience": "SDE @Amazon",
@@ -7,6 +8,7 @@
         "image": "../assets/images/image1.png"
     },
     {
+        "id": 1,
         "name": "Saurav Pal",
         "rating": 5,
         "experience": "SDE-2 @Amazon",
@@ -14,6 +16,7 @@
         "image": "../assets/images/image2.png"
     },
     {
+        "id": 2,
         "name": "Saumya Singh",
         "rating": 5,
         "experience": "Software Engineer @Red Hat",
@@ -21,6 +24,7 @@
         "image": "../assets/images/image3.png"
     },
     {
+        "id": 3,
         "name": "Keshav Bathla",
         "rating": 5,
         "experience": "SDE-1 @Groww",
@@ -28,6 +32,7 @@
         "image": "../assets/images/image4.png"
     },
     {
+        "id": 4,
         "name": "Ankita",
         "rating": 5,
         "experience": "ML Engineer @Firework",
@@ -35,6 +40,7 @@
         "image": "../assets/images/image5.png"
     },
     {
+        "id": 5,
         "name": "Prankur Gupta",
         "rating": 4.9,
         "experience": "SDE @Amazon",
@@ -42,6 +48,7 @@
         "image": "../assets/images/image1.png"
     },
     {
+        "id": 6,
         "name": "Saurav Pal",
         "rating": 5,
         "experience": "SDE-2 @Amazon",
@@ -49,6 +56,7 @@
         "image": "../assets/images/image2.png"
     },
     {
+        "id": 7,
         "name": "Saumya Singh",
         "rating": 5,
         "experience": "Software Engineer @Red Hat",
@@ -56,6 +64,7 @@
         "image": "../assets/images/image3.png"
     },
     {
+        "id": 8,
         "name": "Keshav Bathla",
         "rating": 5,
         "experience": "SDE-1 @Groww",
@@ -63,6 +72,7 @@
         "image": "../assets/images/image4.png"
     },
     {
+        "id": 9,
         "name": "Ankita",
         "rating": 5,
         "experience": "ML Engineer @Firework",
@@ -70,3 +80,5 @@
         "image": "../assets/images/image5.png"
     }
 ]
+
+export default mentorData

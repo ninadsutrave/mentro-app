@@ -1,23 +1,15 @@
-import React, {useState} from 'react'
-import carouselData from '../data.json'
-import './Carousel.css'
+import React from 'react'
+import carouselData from '../MentorData'
+import './CarouselComponent.css'
 
-const Carousel = () => {
-
-    const [carousel, setCarousel] = useState({
-        carouselOrietation: 0,
-        elementOrientation: 0,
-        focusElement: 0,
-        prevElement: 9,
-        nextElement: 1
-    })
+const CarouselComponent = ({carousel, setCarousel}) => {
 
     const rotateRight = () => {
         setCarousel({
             carouselOrietation: carousel.carouselOrietation + 36,
             elementOrientation: carousel.elementOrientation - 36,
             focusElement: carousel.prevElement,
-            prevElement: (carousel.prevElement>0)?carousel.prevElement-1:11,
+            prevElement: (carousel.prevElement>0)?carousel.prevElement-1:9,
             nextElement: carousel.focusElement
         })
     }
@@ -28,7 +20,7 @@ const Carousel = () => {
             elementOrientation: carousel.elementOrientation + 36,
             focusElement: carousel.nextElement,
             prevElement: carousel.focusElement,
-            nextElement: (carousel.nextElement<11)?carousel.nextElement+1:0
+            nextElement: (carousel.nextElement<9)?carousel.nextElement+1:0
         })
     }
 
@@ -43,9 +35,9 @@ const Carousel = () => {
               <div
                 className="carousel-element"
                 key={index}
-                id={index}
                 style={{ transform: `rotate(${carousel.elementOrientation}deg)`, backgroundImage: `url(${item.image})`}}
-              />
+              > 🥳
+                </div>
             ))}
           </div>
         </div>
@@ -57,4 +49,4 @@ const Carousel = () => {
   )
 }
 
-export default Carousel
+export default CarouselComponent

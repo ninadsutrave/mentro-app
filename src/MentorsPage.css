@@ -20,4 +20,11 @@
 .mentors-page {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

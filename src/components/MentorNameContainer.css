@@ -1,0 +1,15 @@
+.mentor-name-container {
+    width: 10%;
+}
+
+.mentor-name {
+    display: grid;
+    place-items: center;
+
+    background: var(--green3);
+    font-weight: 500;
+    font-size: 1.75rem;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    min-width: 300px;
+}

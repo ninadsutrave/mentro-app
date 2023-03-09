@@ -8,7 +8,11 @@ Link To Design: https://www.figma.com/file/lua5xLOP2bEP4kaNBHFmGe/Mentro_Web_Ass
 
 # Preview
 
+User Interface
+
 ![Preview Image](src/assets/images/preview1.png)
+
+Animation
 
 ![Preview Gif](src/assets/gifs/preview2.gif)
 

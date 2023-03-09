@@ -4,7 +4,7 @@ import './MentorInfo.css'
 const MentorInfo = ({activeMentor}) => {
   return (
     <div className="mentor-info">
-        <div>
+        <div className="">
           <h1 className="mentor-name-header"> 
               {activeMentor.name}
           </h1>

@@ -8,6 +8,7 @@ import MentorInfo from './components/MentorInfo'
 import MentorNameContainer from './components/MentorNameContainer'
 import BookSessionButton from './components/BookSessionButton'
 import mentorData from './MentorData'
+import overlay from './assets/images/overlay.png'
 
 const MentorsPage = () => {
 
@@ -26,6 +27,7 @@ const MentorsPage = () => {
 
   return (
     <div className="mentors-page">
+      <img className="overlay-img" src={overlay} />
       <CarouselComponent carousel={carousel} setCarousel={setCarousel}/>
       <div className="left-section">
         <div className="mentor-info-wrapper">

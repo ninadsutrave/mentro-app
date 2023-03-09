@@ -16,7 +16,7 @@ const mentorData = [
     {
         "id": 1,
         "name": "Saurav Pal",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "SDE-2 @Amazon",
         "description": "I am a Senior Software Developer American Express. Have been passionately solving Leetcode, HackerRank, Codechef, Codeforces problems, and enthusiastically solving problems with the analysis of space.",
         "image": image2
@@ -24,7 +24,7 @@ const mentorData = [
     {
         "id": 2,
         "name": "Saumya Singh",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "Software Engineer @Red Hat",
         "description": "Engineer @RedHat | Program Manager'20 @GirlScript | GHCI Scholar | International Open Source Award finalist by Red Hat | Winner SIH, 21U21 Award | Google Connect Winner'19 | Mentor GCI",
         "image": image3
@@ -32,7 +32,7 @@ const mentorData = [
     {
         "id": 3,
         "name": "Keshav Bathla",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "SDE-1 @Groww",
         "description": "A curious learner, on a way to become a kickass developer who writes Python, Java, Javascript and Go | Software Engineer @Groww | Ex-Software Engineer @Grofers | Tech Consultant | Freelancer | Open Source Developer | Coding Instructor",
         "image": image4
@@ -40,13 +40,13 @@ const mentorData = [
     {
         "id": 4,
         "name": "Ankita",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "ML Engineer @Firework",
         "description": "Working my way to build the world's future product. Machine Learning Engineer, Data and Technology Evangelist I breathe in developing software with intelligence. I have been involved with startups like DailyHunt, Firework Hq, MagilHub to build the AI end of their products.",
         "image": image5
     },
     {
-        "id": 5,
+        "id": 5.0,
         "name": "Prankur Gupta",
         "rating": 4.9,
         "experience": "SDE @Amazon",
@@ -56,7 +56,7 @@ const mentorData = [
     {
         "id": 6,
         "name": "Saurav Pal",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "SDE-2 @Amazon",
         "description": "I am a Senior Software Developer American Express. Have been passionately solving Leetcode, HackerRank, Codechef, Codeforces problems, and enthusiastically solving problems with the analysis of space.",
         "image": image2
@@ -64,7 +64,7 @@ const mentorData = [
     {
         "id": 7,
         "name": "Saumya Singh",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "Software Engineer @Red Hat",
         "description": "Engineer @RedHat | Program Manager'20 @GirlScript | GHCI Scholar | International Open Source Award finalist by Red Hat | Winner SIH, 21U21 Award | Google Connect Winner'19 | Mentor GCI",
         "image": image3
@@ -72,7 +72,7 @@ const mentorData = [
     {
         "id": 8,
         "name": "Keshav Bathla",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "SDE-1 @Groww",
         "description": "A curious learner, on a way to become a kickass developer who writes Python, Java, Javascript and Go | Software Engineer @Groww | Ex-Software Engineer @Grofers | Tech Consultant | Freelancer | Open Source Developer | Coding Instructor",
         "image": image4
@@ -80,7 +80,7 @@ const mentorData = [
     {
         "id": 9,
         "name": "Ankita",
-        "rating": 5,
+        "rating": 5.0,
         "experience": "ML Engineer @Firework",
         "description": "Working my way to build the world's future product. Machine Learning Engineer, Data and Technology Evangelist I breathe in developing software with intelligence. I have been involved with startups like DailyHunt, Firework Hq, MagilHub to build the AI end of their products.",
         "image": image5

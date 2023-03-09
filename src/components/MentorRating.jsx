@@ -17,7 +17,7 @@ const MentorRating = ({activeMentor}) => {
   return (
     <div className="mentor-rating-wrapper">
       <div className="mentor-rating-value-wrapper">
-        <span className="mentor-rating-value" style={{color: `${textColor}`}}>{activeMentor.rating}</span>
+        <span className="mentor-rating-value" style={{color: `${textColor}`}}>{activeMentor.rating.toFixed(1)}</span>
       </div>
       <div className="mentor-rating-stars">
         <img className="rating-image" alt="rating stars" src={imgUrl} />

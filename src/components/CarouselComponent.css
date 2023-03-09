@@ -10,9 +10,10 @@
 .carousel-border {
     width: 800px;
     height: 800px;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='800' ry='800' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='800' ry='800' stroke='%230C3959FF' stroke-width='4' stroke-dasharray='6%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); */
     border-radius: 800px;
     background-color: transparent;
+    z-index: 5;
 }
 
 .carousel {
@@ -38,9 +39,13 @@
     z-index: 10;
     position: fixed;
     left: 80vh;
-    bottom: 45vh;
     display: flex; 
     gap: 50rem;
+    margin-left: -10rem;
+    width: 70vw;
+    height: 50vh;
+    bottom: 0;
+    right: 0;
 }
 
 .navigation-button {
@@ -51,6 +56,8 @@
     height: 75px;
     outline: none;
     border: none;
+    margin-left: 5rem;
+    margin-top: 10rem;
 }
 
 .navigation-button:hover {
@@ -79,6 +86,7 @@
 .mentor-img {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
 }
 
 .carousel-element:nth-child(1) {

@@ -5,6 +5,7 @@ import './CarouselComponent.css'
 const CarouselComponent = ({carousel, setCarousel}) => {
 
   const navigatorColor = (carousel.focusElement % 2)?'var(--green1)':'var(--green2)'
+  const borderColor = (carousel.focusElement % 2)?'url("data:image/svg+xml,%3csvg width=\'100%25\' height=\'100%25\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3crect width=\'100%25\' height=\'100%25\' fill=\'none\' rx=\'800\' ry=\'800\' stroke=\'%234CAF50FF\' stroke-width=\'4\' stroke-dasharray=\'6%2c 24\' stroke-dashoffset=\'0\' stroke-linecap=\'square\'/%3e%3c/svg%3e")':'url("data:image/svg+xml,%3csvg width=\'100%25\' height=\'100%25\' xmlns=\'http://www.w3.org/2000/svg\'%3e%3crect width=\'100%25\' height=\'100%25\' fill=\'none\' rx=\'800\' ry=\'800\' stroke=\'%230C3959FF\' stroke-width=\'4\' stroke-dasharray=\'6%2c 24\' stroke-dashoffset=\'0\' stroke-linecap=\'square\'/%3e%3c/svg%3e")'
 
     const rotateRight = () => {
         setCarousel({
@@ -24,7 +25,7 @@ const CarouselComponent = ({carousel, setCarousel}) => {
 
   return (
       <div className="carousel-wrapper">
-        <div className="carousel-border">
+        <div className="carousel-border" style={{backgroundImage: borderColor}}>
           <div
             className="carousel"
             style={{ transform: `rotate(${carousel.carouselOrietation}deg)` }}

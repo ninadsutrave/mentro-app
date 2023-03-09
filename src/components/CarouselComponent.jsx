@@ -8,9 +8,7 @@ const CarouselComponent = ({carousel, setCarousel}) => {
         setCarousel({
             carouselOrietation: carousel.carouselOrietation + 36,
             elementOrientation: carousel.elementOrientation - 36,
-            focusElement: carousel.prevElement,
-            prevElement: (carousel.prevElement>0)?carousel.prevElement-1:9,
-            nextElement: carousel.focusElement
+            focusElement: (carousel.focusElement<9)?carousel.focusElement + 1:0
         })
     }
 
@@ -18,9 +16,7 @@ const CarouselComponent = ({carousel, setCarousel}) => {
         setCarousel({
             carouselOrietation: carousel.carouselOrietation - 36,
             elementOrientation: carousel.elementOrientation + 36,
-            focusElement: carousel.nextElement,
-            prevElement: carousel.focusElement,
-            nextElement: (carousel.nextElement<9)?carousel.nextElement+1:0
+            focusElement: (carousel.focusElement>0)?carousel.focusElement - 1:9
         })
     }
 
@@ -36,7 +32,8 @@ const CarouselComponent = ({carousel, setCarousel}) => {
                 className="carousel-element"
                 key={index}
                 style={{ transform: `rotate(${carousel.elementOrientation}deg)`, backgroundImage: `url(${item.image})`}}
-              > 🥳
+              > 
+              <img src={item.image}/>
                 </div>
             ))}
           </div>

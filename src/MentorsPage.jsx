@@ -14,9 +14,7 @@ const MentorsPage = () => {
   const [carousel, setCarousel] = useState({
     carouselOrietation: 0,
     elementOrientation: 0,
-    focusElement: 0,
-    prevElement: 9,
-    nextElement: 1
+    focusElement: 0
   })
 
   const [activeMentor, setActiveMentor] = useState(mentorData[0])

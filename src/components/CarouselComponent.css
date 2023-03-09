@@ -1,24 +1,25 @@
 .carousel-wrapper {
-    position: absolute;
     left: 10;
     top: 10;
     width: 100%;
+    margin-top: 10rem;
 }
 
 .carousel-border {
-    width: 364px;
-    height: 364px;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='400' ry='400' stroke='%23158346FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    width: 800px;
+    height: 800px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='800' ry='800' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 24' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 800px;
 }
 
 .carousel {
     position: relative;
-    width: 364px;
-    height: 364px;
+    width: 800px;
+    height: 800px;
     border-radius: 50%;
     transition: 0.5s;
     transform-origin: center center;
-    border-radius: 400px;
+    border-radius: 500px;
 }
 
 .carousel::before {
@@ -53,9 +54,10 @@
 .carousel-element {
     position: absolute;
     border-radius: 50%;
-    background: lightgreen;
-    width: 50px;
-    height: 50px;
+    background: transparent;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,43 +69,42 @@
 }
 
 .carousel-element:nth-child(1) {
-    right: -19px;
-    top: 101px;
+    left: 325px;
+    bottom: 725px;
 }
 .carousel-element:nth-child(2) {
-    right: -17px;
-    top: 213px;
+    left: 560px;
+    bottom: 648px;
 }
 .carousel-element:nth-child(3) {
-    right: 49px;
-    top: 303px;
+    left: 705px;
+    bottom: 448px;
 }
 .carousel-element:nth-child(4) {
-    right: 156px;
-    top: 337px;
+    left: 705px;
+    bottom: 201px;
 }
 .carousel-element:nth-child(5) {
-    right: 263px;
-    top: 302px;
+    left: 560px;
+    bottom: 1px;
 }
 .carousel-element:nth-child(6) {
-    right: 330px;
-    top: 210px;
+    left: 325px;
+    bottom: -75px;
 }
 .carousel-element:nth-child(7) {
-    right: 330px;
-    top: 100px;
+    left: 89px;
+    bottom: 1px;
 }
 .carousel-element:nth-child(8) {
-    right: 263px;
-    top: 7px;
+    left: -55px;
+    bottom: 201px;
 }
 .carousel-element:nth-child(9) {
-    right: 156px;
-    top: -27px;
+    left: -55px;
+    bottom: 448px;
 }
 .carousel-element:nth-child(10) {
-    right: 48px;
-    top: 6px;
+    left: 89px;
+    bottom: 648px;
 }
- 

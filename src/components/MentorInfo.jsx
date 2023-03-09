@@ -4,12 +4,14 @@ import './MentorInfo.css'
 const MentorInfo = ({activeMentor}) => {
   return (
     <div className="mentor-info">
-        <h1 className="mentor-name-header"> 
-            {activeMentor.name}
-        </h1>
-        <h2 className="mentor-experience">
-            {activeMentor.experience}
-        </h2>
+        <div>
+          <h1 className="mentor-name-header"> 
+              {activeMentor.name}
+          </h1>
+          <p className="mentor-experience">
+              {activeMentor.experience}
+          </p>
+        </div>
         <p className="mentor-description">
             {activeMentor.description}
         </p>

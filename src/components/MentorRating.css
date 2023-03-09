@@ -1,0 +1,16 @@
+.mentor-rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5rem;
+}
+
+.mentor-rating-value {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: var(--green1);
+}
+
+.rating-image {
+    width: 200px;
+}

@@ -3,6 +3,7 @@ import './MentorsPage.css'
 
 //importing components
 import CarouselComponent from './components/CarouselComponent'
+import MentorRating from './components/MentorRating'
 import MentorInfo from './components/MentorInfo'
 import MentorNameContainer from './components/MentorNameContainer'
 import BookSessionButton from './components/BookSessionButton'
@@ -25,12 +26,13 @@ const MentorsPage = () => {
     setActiveMentor(info[0])
   })
 
-  console.log(activeMentor)
-
   return (
     <div className="mentors-page">
       <div className="top-section">
-        <MentorInfo activeMentor={activeMentor}/>
+        <div className="mentor-info-wrapper">
+          <MentorRating activeMentor={activeMentor}/>
+          <MentorInfo activeMentor={activeMentor}/>
+        </div>
         <CarouselComponent carousel={carousel} setCarousel={setCarousel}/>
       </div>
       

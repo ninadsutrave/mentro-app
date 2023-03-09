@@ -32,5 +32,11 @@
 .bottom-section {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.mentor-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

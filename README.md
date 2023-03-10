@@ -13,6 +13,8 @@ Link To Design: https://www.figma.com/file/lua5xLOP2bEP4kaNBHFmGe/Mentro_Web_Ass
 
 # Preview
 
+**Works best on screen sizes of 1792px x 1000px**
+
 User Interface
 
 ![Preview Image](src/assets/images/preview1.png)
